@@ -1,0 +1,143 @@
+.pagina-login{
+    max-width: 1200px;
+    height: 100vh;
+    background-color: rgb(251, 238, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background:#ffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1), 
+            0 15px 15px rgba(0,0,0,0.1);
+    width: 50rem;
+}
+.back-pages{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.back-register-form{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back-register-form:hover > span{
+    text-decoration: underline;
+}
+.back-register-form span{
+    color: blue;
+    font-size: 16px;
+  
+}
+.back-register-form i{
+   color: blue;
+   margin-right: 5px;
+   font-size: 16px;
+}
+
+.back-home-page{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.back-home-page:hover > span{
+    text-decoration: underline;
+}
+.back-home-page span{
+    color: blue;
+    font-size: 16px;
+  
+}
+.back-home-page i{
+   color: blue;
+   margin-right: 5px;
+   font-size: 16px;
+}
+.login-container img{
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.column a{
+    align-self: flex-end;
+    color: blue;
+    cursor: pointer;
+}
+.column a:hover{
+    text-decoration: underline;
+}
+.column button{
+    color: white;
+    background-color: var(--color-secondary);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 16px;
+}
+.form-title.login-title{
+    font-size: 20px;
+    align-self: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.message-error{
+    color: red;
+    margin: auto;
+    font-size: 14px;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .pagina-login{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:468px){
+    .login-container{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .login-container img{
+        align-self: center;
+        width: 148px;
+        height: 148px;
+    }
+    .form-title.login-title{
+        font-size: 20px;
+        align-self: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .back-home-page span{
+        font-size: 12px;
+    }
+    .back-home-page i{
+       font-size: 12px;
+    }
+    .back-register-form span{
+        font-size: 12px;
+    }
+    .back-register-form i{
+       font-size: 12px;
+    }
+    
+}

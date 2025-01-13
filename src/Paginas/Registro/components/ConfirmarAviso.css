@@ -1,0 +1,19 @@
+.confirmar-cuenta-ventana{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.confirmar-title{
+    font-size: 24px;
+    color:var(--color-secondary);
+    margin-bottom: 30px;
+    
+}
+
+.confirmar-info{
+    font-size: 18px;
+    text-align: justify;
+    color: black;
+}
+

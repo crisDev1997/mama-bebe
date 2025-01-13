@@ -1,0 +1,138 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+:root {
+ 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: black;
+  background-color: rgb(251, 238, 247);
+  --color-primary: #ffcbdb;
+  --color-secondary: rgb(88, 208, 215);
+  --color-secondary-hover: rgba(88, 208, 215,0.5);
+  --color-subtext: #fcc82e;
+  --color-white: #fff;
+  --color-third:#fdf0f0;
+  --bg-color2: #3f4f75;
+  --btn-bluelight: #58d0d7;
+  --btn-yellow: #fcc82e;
+  --font-light-rounded: "Tangerine", cursive;
+  --border-color: #e1e1e1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --speed-transition: 500ms;
+  
+
+}
+#root{
+  position: relative;
+  background-color: var(--color-third);
+  border: 2px solid #e1e1e1;
+}
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+.btn-bluelight{
+  background-color: var(--btn-bluelight);
+  border: none;
+}
+.btn-yellow{
+  background-color: var(--btn-yellow);
+  border: none;
+}
+
+.contenedor{
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.seccion{
+  padding: 3rem 5rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #fafafa;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,*:before,*::after{
+  box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #fafafa;
+  width: 1200px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  html {
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 468px) {
+  html {
+    padding: 0;
+    width: auto;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .seccion{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

@@ -1,0 +1,52 @@
+.recovery-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background:#ffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1), 
+            0 15px 15px rgba(0,0,0,0.1);
+    width: 400px;
+}
+.recovery-container h2{
+    font-weight: bold;
+}
+.form-email-recover .span-sub{
+    color: gray;
+}
+.form-email-recover .campo{
+    padding: 20px 0px;
+}
+
+
+.form-email-recover button{
+    color: white;
+    border: none;
+    background-color: var(--color-secondary);
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0px;
+    width: 100%;
+}
+.recovery-container button:hover{
+  
+    background-color: var(--color-secondary-hover);
+ 
+}
+
+.error-recovery{
+    color:red;
+    padding: 10px 0px;
+}
+@media screen and (min-width:320px) and (max-width:468px){
+    .recovery-container{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    
+}

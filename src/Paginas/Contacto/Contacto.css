@@ -1,0 +1,95 @@
+
+
+.contact-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.form-contact {
+    flex: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.img-form {
+    flex:1;
+    padding: 20px;
+}
+.img-form img{
+    width: 500px;
+    height: 500px;
+}
+.form-contact-span-title{
+    font-size: 36px;
+    color:var(--color-secondary);
+    padding-bottom: 10px;
+}
+.span-subtitle{
+    font-size: 18px;
+    color:var(--color-secondary);
+    margin-bottom: 20px;    
+}
+.form-message{
+    padding: 5px;
+    appearance: none;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    resize: none;
+    margin-bottom: 20px;
+}
+.btn-submit{
+    align-self: center;
+    background-color: var(--color-secondary);
+    font-size: 16px;
+    border: none;
+    margin: 5px;
+    padding: 20px;
+    cursor: pointer;
+    width: 70%;
+}
+.btn-submit :hover{
+    background-color: var(--color-secondary-hover);
+}
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.message-error{
+    color:red;
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .secciones{
+        width: 100%;
+        padding-left: 0px ;
+        padding-right: 0px ;
+    }
+    .form-contact{
+        flex:2;
+    }
+    .img-form img{
+        flex:1;
+        width: auto;
+        height: 350px;
+     }
+}
+@media screen and (min-width: 320px) and (max-width: 468px) {
+    .secciones{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px ;
+        padding-right: 0px ;
+    }
+    .img-contact-us {
+       display: none;
+    }
+    .form-contact-span-title{
+        font-size: 24px;
+     
+    }
+}

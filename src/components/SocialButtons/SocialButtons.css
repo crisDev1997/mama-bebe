@@ -1,0 +1,57 @@
+.social-buttons{
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 50%;
+    right: 17%;
+    z-index: 2;
+    
+}
+.social-buttons a{
+    color:rgb(255, 192, 203);
+}
+.social-buttons button{
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.social-buttons i{
+    font-size: 24px;
+    
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+
+    
+}
+@media (max-width:1024px) {
+    .social-buttons{
+        top: 45%;
+        right: 10px; 
+    }
+}
+
+@media (max-width:800px){
+
+}
+
+@media (max-width:464px) {
+    .social-buttons{
+        display: none;
+        flex-direction: row;
+        position:fixed;
+        bottom: 0;
+        left: 20px;
+        z-index: 2;
+        height: 200px;
+        
+    }
+    .social-buttons button{
+        border: none;
+        padding: 10px;
+        margin-left: 5px;
+    }
+    
+}

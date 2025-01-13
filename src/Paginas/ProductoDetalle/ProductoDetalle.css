@@ -1,0 +1,156 @@
+.pagina-producto-detalle{
+ 
+}
+.articulo{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.articulo img{
+    height: 500px;
+    width: 500px;
+    background-color: #fbeef7;
+}
+
+.info{
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.info .nombre{
+    
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.articulo-precios{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.articulo-precios span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 10px ;
+}
+.articulo-desc{
+    display: flex;
+    flex-flow: column;
+}
+.articulo-desc .descripcion{
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.articulo-detalles{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+.set-cantidad{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.set-cantidad i{
+    cursor: pointer;
+    padding: 5px;
+    color: black;
+    border: 1px solid black;    
+}   
+.cantidad {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid black;
+    
+  }
+
+  .contain-buttons2{
+    width: 50%;
+    display: flex;
+    flex:row;
+    margin-bottom: 20px;
+  }
+
+  .contain-buttons2 button{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .contain-buttons2 button:hover{
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--btn-yellow);
+    
+  }
+
+  .descripcion, .marca, .detalle-precio, .para{
+    font-size: 1.4rem;
+    color: darkgray;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    .articulo img{
+        object-fit: cover;
+        height: 350px;
+        width: 350px;
+    }
+  }
+
+  @media  screen and (min-width:320px) and (max-width:468px) {
+    .pagina-producto-detalle{
+        
+        
+    }
+    .articulo{
+        display: flex;
+        flex-direction: column;
+    }
+    .articulo img{
+        object-fit: cover;
+        align-self: center;
+        height: 300px;
+        width: 300px;
+    }
+    .info{
+        padding: 10px;
+    }
+    .info .nombre{
+        align-self:center;
+        font-size: 16px;
+    }
+    .articulo-precios span{
+        font-size: 14px;
+    }
+    .title{
+        font-weight: bold;
+    
+    }
+    .descripcion{
+       
+        font-size: 12px;
+    }
+
+
+
+    .articulo-detalles span{
+        color: #e1e1e1;
+        font-weight: 400;
+        font-size: 12px;
+    }
+  }

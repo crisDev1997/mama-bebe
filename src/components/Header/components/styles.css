@@ -1,0 +1,12 @@
+.account-info i{
+  color:var(--color-primary);
+  font-size: 12px;
+}
+.account-info span{
+  margin-left: 10px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  color:var(--color-primary);
+}
+
+

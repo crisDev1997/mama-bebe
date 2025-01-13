@@ -1,0 +1,170 @@
+.pagina-registro{
+    background-color: rgb(251, 238, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.registro-container{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    background:#ffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1), 
+            0 15px 15px rgba(0,0,0,0.1);
+    
+}
+.back-pages{
+    display: flex;
+    justify-content: space-between;
+}
+.back-login{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back-login:hover > span{
+    text-decoration: underline;
+}
+.back-login span{
+    color: blue;
+    font-size: 16px;
+  
+}
+.back-login i{
+   color: blue;
+   margin-right: 5px;
+   font-size: 16px;
+}
+
+.back-home-page{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.back-home-page:hover > span{
+    text-decoration: underline;
+}
+.back-home-page span{
+    color: blue;
+    font-size: 16px;
+  
+}
+.back-home-page i{
+   color: blue;
+   margin-right: 5px;
+   font-size: 16px;
+}
+
+.form-register{
+    margin-top: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+.form-title{
+    font-size: 24px;
+    align-self: center;
+    font-weight: bold;
+}
+.form-subtitle{
+    color: grey;
+    font-size: 18px;
+    align-self: center;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.row-inputs-register{
+    display: flex;
+    gap: 10px;
+}
+.row-inputs-register:nth-child(1){
+    flex:50%
+}
+.row-inputs.register:nth-child(2){
+    flex:50%
+}
+.row-inputs-address{
+    display: flex;
+    gap: 10px;  
+}
+.row-inputs-address :nth-child(1){
+    flex:32%
+}
+.row-inputs-address :nth-child(2){
+    flex:68%
+}
+.btn-register{
+
+    margin-top: 0.5rem;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+    color: white;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+.error-registro{
+    color:red;
+    font-size: 16px;
+}
+@media screen and (min-width: 1200px){
+    .pagina-registro{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 2rem;
+    
+    }
+  
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .pagina-registro{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 2rem;
+    
+    }
+  
+}
+
+@media screen and (min-width:320px) and (max-width:468px){
+    .pagina-registro{
+        justify-content: start;
+        align-items: start;
+    }
+    .registro-container{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .form-title{
+        font-size: 20px;
+        align-self: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .back-home-page span{
+        font-size: 12px;
+    }
+    .back-home-page i{
+       font-size: 12px;
+    }
+    .back-login span{
+        font-size: 12px;
+    }
+    .back-login i{
+       font-size: 12px;
+    }
+    
+}

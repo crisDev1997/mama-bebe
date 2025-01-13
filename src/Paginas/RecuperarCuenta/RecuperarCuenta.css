@@ -1,0 +1,87 @@
+.pagina-recuperar-cuenta{
+    max-width: 1200px;
+    height: 100vh;
+    background-color: rgb(251, 238, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.recuperar-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background:#ffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1), 
+            0 15px 15px rgba(0,0,0,0.1);
+    width: 550px;
+}
+.recuperar-title{
+    font-size: 24px;
+    padding: 10px 0px;
+    text-align: center;
+}
+.recuperar-desc{
+    padding: 20px 0px;
+    color:gray;
+
+}
+.align-self-center{
+    display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.recuperar-btn{
+    padding: 20px 0px;
+    font-size: 18px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.recuperar-btn:hover {
+    background-color: var(--color-secondary-hover);
+}
+.error-message{
+    align-self: center;
+    color: red;
+}
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .pagina-recuperar-cuenta{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 40px;
+    
+    }
+  
+}
+
+@media screen and (min-width:320px) and (max-width:468px){
+    .pagina-recuperar-cuenta{
+        justify-content: start;
+        align-items: start;
+    }
+    .recuperar-container{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .recuperar-title{
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .recuperar-desc{
+        padding: 10px 0px;
+        font-size: 14px;
+        color:gray;
+    
+    }
+    .recuperar-btn{
+        padding: 10px 0px;
+        font-size: 18px;
+        width: 80%;
+        cursor: pointer;
+    }
+}

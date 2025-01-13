@@ -1,0 +1,114 @@
+.catalogo-productos{
+    max-width: 120rem;
+    
+}
+.seccion-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.product-span-title{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-subtext);
+    margin: 0;
+    padding: 1rem 0px 1.5rem 0px;
+}
+.product-list-index{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0px;
+ 
+    justify-content: center;
+}
+
+.index-num {
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+    margin-right: 1.5rem; /* Agrega un margen derecho de 0.5rem (8px) */
+  }
+  
+  .index-num::after {
+    content: ",";
+  }
+  
+  .index-num:last-of-type {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+  
+  .index-num:last-of-type::after {
+    content: "";
+  }
+
+.no-results-container{
+    padding: 10px;
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background-color: white;
+    
+}
+.span-no-results{
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+.image-container {
+    position: relative;
+    display: inline-block; /* Permite que el contenedor se ajuste al tamaño de la imagen */
+  }
+  
+.img-no-results{
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+.btn-reload{
+    position: absolute;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    width: auto;
+    bottom: 50%; /* Ajusta según sea necesario */
+    left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); 
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+   
+    .seccion-productos{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: start;
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:468px) {
+   
+    .seccion-productos{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .span-no-results{
+        font-size: 16px;
+    }
+    .btn-reload{
+        font-size: 16px;
+        padding: 10px;
+     
+    }
+    .img-no-results{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+}

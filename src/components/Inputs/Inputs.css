@@ -1,0 +1,130 @@
+
+.campo {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+.campo span{
+    color:var(--color-secondary);
+    font-size: 18px;
+}
+.input-data{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.input-data i{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 9px;
+    color: black;
+}
+.input-data input{
+    appearance: none;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 8px;
+}
+.input-data select{
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.errors span{
+    color: red;
+    font-size: 14px;
+}
+/*CheckBox or SelectInputData*/
+.row-inputs{
+    display: flex;
+    gap: 10px;
+}
+.row-inputs :nth-child(1){
+    flex:30%;
+}
+.row-inputs :nth-child(2){
+    flex:70%;
+}
+.default-input-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.default-input-data input[type='text']{
+    margin-top: 10px;
+    appearance: none;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.default-input-data select{
+    margin-top: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+}
+.user-option-default{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+.user-option-default input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;   /* Para navegadores basados en WebKit como Chrome y Safari */
+    -moz-appearance: none; /* Para Firefox */
+  
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .user-option-default input[type='checkbox']:checked {
+    background-color: #008000; /* Color de fondo cuando el checkbox está marcado */
+    border-color: black; /* Color del borde cuando el checkbox está marcado */
+  }
+
+.user-option-default span{
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+}
+.row-inputs.select-input-data .disabled-style{
+    background-color: gray;
+}
+
+/**/
+@media screen and (min-width:320px) and (max-width:468px){
+    .campo {
+        margin-bottom: 5px;
+    }
+    .campo span{
+        font-size: 14px;
+    }
+    .input-data i{
+        font-size: 14px;
+     
+    }
+    .input-data input{
+        font-size: 14px;
+        width: 90%;
+    }
+    .input-data select{
+        font-size: 12px;
+        width: 90%;
+        padding: 10px;
+    }
+}

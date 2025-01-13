@@ -1,0 +1,173 @@
+.pagina-carrito{
+  background-color: #ffff;
+}
+
+.carrito-title{
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+.contain{
+    display: flex;
+    flex-flow: column;
+    padding: 20px 20px;
+    background-color: #ffff;
+    border-radius: 15px;
+
+}
+.empty-contain{
+  margin: 0 0 auto 0;
+  display: flex;
+  flex-flow: column;
+  
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+.empty-contain img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 40px;
+  object-fit: contain;
+}
+.span-title-empty-cart{
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.span-subtitle-empty-cart{
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.empty-contain button{
+  padding: 10px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.producto-img-name{
+    display: flex;
+    
+}
+.producto-img-name img{
+    width: 200px;
+    height: 200px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: transform 1.5s ease-in-out;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+.td-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-out {
+    transform: translateX(100%);
+  }
+.quantity{
+  font-size: 16px;
+  gap: 2px;
+}
+
+.quantity i{
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.remove i{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.quantity span{
+    padding: 4px;
+}
+.check-out{
+  margin-top: 20px;
+  display: flex;
+  padding: 50px;
+  background-color: var(--color-secondary);
+  align-items: center;
+  justify-content: center;
+}
+.check-out button{
+  background-color: var(--color-subtext);
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.subtotal{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+/* Estilos para tamaños de pantalla mayores a 1200px (tamaño normal) */
+@media only screen and (min-width: 1200px) {
+  th, td {
+    font-size: 16px;
+  }
+}
+
+  /* Estilos para tamaños de pantalla de 768px a 1024px (tablet) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    th, td {
+      font-size: 14px;
+    }
+    .pagina-carrito{
+      padding-bottom: 8rem;
+    }
+  }
+
+  
+  
+
+  @media (min-width:320px) and (max-width:468px) {
+      
+    .producto-img-name{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .carrito-title{
+        font-size: 12px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    .producto-img-name img{
+        width: 70px;
+        height: 70px;
+    }
+    .span-title-empty-cart{
+      font-size: 24px;
+     
+    }
+    th, td {
+      font-size: 12px;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      
+    }
+  }

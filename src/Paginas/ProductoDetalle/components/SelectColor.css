@@ -1,0 +1,8 @@
+.select-camp{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.select-color{
+    background-color: #ffff;
+}

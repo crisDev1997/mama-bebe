@@ -1,0 +1,110 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search.start {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 30px;
+}
+.search.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search form{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.search input {
+  border-color: transparent;
+  background-color: #ffff;
+  border: 1px solid #e1e1e1;
+  padding: 10px 10px;
+  margin: 0px 2px;
+  color: black;
+  width: 70%;
+}
+
+.search:hover input {
+  border: 2px solid rgb(255, 192, 203);
+}
+.search:active input {
+  border: 2px solid rgb(255, 192, 203);
+}
+.search button {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0;
+  height: 40px;
+  border-color: transparent;
+  background-color: rgb(255, 192, 203);
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+
+/*Estilos para la seccion de filtros*/
+.filters-section{
+  margin-bottom: 20px;
+}
+
+.filter-title-header {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.filter-types {
+  display: flex;
+  gap: 40px;
+}
+.filter-type {
+  display: flex;
+  flex-direction: column;
+}
+.filter-type .filter-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.filter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.filter-option {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-option{
+  accent-color: #fff;
+}
+@media (min-width:320px) and (max-width:480px) {
+  .search form{
+    width: 70%;
+  }
+  .filter-title-header {
+    font-size: 16px;
+    font-weight: 700px;
+  }
+  .filter-types {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filter-row {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 10px;
+  }
+  .filter-option span{
+    font-size: 14px;
+  }
+}

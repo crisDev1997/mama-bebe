@@ -1,0 +1,17 @@
+.pagina-comprar{
+    max-width: 1200px;
+    height: 100vh;
+    background-color: rgb(251, 238, 247);
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    
+}
+
+
+@media screen and (min-width:320px) and (max-width:468px){
+   .pagina-comprar{
+    padding-top: 0px;
+   }
+}
